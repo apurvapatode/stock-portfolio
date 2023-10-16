@@ -36,7 +36,7 @@ class Portfolio extends React.Component {
   
     removeStock(index) {
       const portfolio = this.state.portfolio.slice(); 
-  
+      portfolio.splice(index, 1);
       this.setState({ portfolio });
     }
     
